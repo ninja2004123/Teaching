@@ -2,7 +2,7 @@ lab50:
   files:
     - !exclude "*"
     - !include test.c
-    - !pseudocode.txt
+    - !include pseudocode.txt
     
   window:
     - editor
