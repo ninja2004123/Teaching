@@ -1,7 +1,7 @@
 lab50:
   files:
     - !exclude "*"
-    - !include test.c
+    - !include test.cpp
     - !include pseudocode.txt
     
   window:
