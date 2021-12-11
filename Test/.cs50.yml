@@ -3,3 +3,8 @@ lab50:
     - !exclue "*"
     - !include test.c
     - !pseudocode.txt
+    
+ window:
+    - editor
+    - readme
+    - terminal
