@@ -1,6 +1,6 @@
 check50:
   checks:
-    comiples:
+    compiles:
       - run: make hello
         exit: 0
   
