@@ -4,3 +4,19 @@ check50:
       - run: python3 hello.py
         stdout: Hello, world!
         exit: 0
+    foo:
+      - run: python3 foo.py
+        stdin: baz
+        stdout: baz
+        exit: 0
+    bar:
+      - run: python3 bar.py
+        stdin: baz
+        stdout: bar baz
+      - run: python3 bar.py
+        stdin:
+          - baz
+          - quz
+        stdout:
+          - bar baz
+          - bar quz
