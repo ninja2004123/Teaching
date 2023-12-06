@@ -1,6 +1,5 @@
 check50:
   files:
-    - !exclude "*"
     - !require hello.cpp
   checks:
     hello world:
