@@ -3,11 +3,9 @@ check50:
     files:
       - !exclude "*"
       - !require wordle.c
-    
     compiles:
       - run: make hello
         exit: 0
-  
     hello world:
       - run: ./hello
         stdout: Hello, World!
