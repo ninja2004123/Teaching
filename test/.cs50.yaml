@@ -1,5 +1,9 @@
 check50:
   checks:
+    files:
+      - !exclude "*"
+      - !require wordle.c
+    
     compiles:
       - run: make hello
         exit: 0
