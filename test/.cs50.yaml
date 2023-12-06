@@ -1,7 +1,7 @@
 check50:
   files:
     - !exclude "*"
-    - !require wordle.c
+    - !require hello.cpp
     
   checks:
     compiles:
