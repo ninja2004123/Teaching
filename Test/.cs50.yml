@@ -1,10 +1,6 @@
-lab50:
-  files:
-    - !exclude "*"
-    - !include test.cpp
-    - !include pseudocode.txt
-    
-  window:
-    - editor
-    - readme
-    - terminal
+check50:
+  checks:
+    hello world:
+      - run: python3 hello.py
+        stdout: Hello, world!
+        exit: 0
