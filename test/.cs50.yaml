@@ -1,6 +1,4 @@
 check50:
-  files:
-    - !require hello.cpp
   checks:
     hello world:
       - run: make hello & ./hello
