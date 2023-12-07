@@ -1,23 +1,28 @@
 import check50
 
+
 @check50.check()
 def exists():
     """hello.cpp exists"""
     check50.exists("hello.cpp")
 
+
 @check50.check(exists)
 def compiles():
     """hello.cpp compiles"""
     exitFailed = check50.run("make hello").exit()
+
     if exitFailed:
-        help = "File failed to compile"
-        raise check50.Failure(exitFailed, help=help)
+        message = "hello.cpp failed to compile"
+        raise check50.Failure(message)
+
 
 @check50.check(compiles)
 def test_Hello_World():
     """prints Hello, World!"""
     out = check50.run("./hello").stdout()
     checkOutput(out)
+
 
 def checkOutput(out):
     correctOutput = "Hello, World!\n"
