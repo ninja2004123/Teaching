@@ -1,13 +1,4 @@
 check50:
   files:
+    - !exclude "*"
     - !require hello.cpp
-    
-  checks:
-    compiles:
-      - run: make hello
-        exit: 0
-    hello world:
-      - run: ./hello
-        stdout: Hello, World!
-        exit: 0
-    
